@@ -14,14 +14,16 @@ namespace _04___Exercise
             Console.WriteLine();
             Console.WriteLine();
 
-            int arv = int.Parse(input1);
-         
-       
-            Console.WriteLine("Esimene number:" + input1);
-            Console.WriteLine("Teine number:" + input2);
+            int arv   = int.Parse(Console.ReadLine());
+            int arvb  = int.Parse(Console.ReadLine());
+
+
+
+            Console.WriteLine("Esimene number:" + arv);
+            Console.WriteLine("Teine number:" +  arvb);
             Console.WriteLine();
             Console.WriteLine();
-            Console.WriteLine("Tulemuseks on:" + Convert);
+            Console.WriteLine("Tulemuseks on:" + (arv + arvb));
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("Press any key to continue");
