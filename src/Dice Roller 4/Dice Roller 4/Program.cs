@@ -15,6 +15,7 @@ namespace Dice_Roller
             Console.WriteLine("> /roll 3d6 2d8");
             Console.WriteLine(" ");
 
+         
 
             var random = new Random();
             var total = 0;
@@ -26,7 +27,6 @@ namespace Dice_Roller
 
                 Console.WriteLine($"1d6 {roll}");
             }for (var i =0; i<2; i++)
-
 
 
 
