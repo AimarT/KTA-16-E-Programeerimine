@@ -2,6 +2,8 @@
 {
     using System;
     using Blackjack.Core;
+    using System.Collections.Generic;
+
     class Program
     {
         static void Main(string[] args)
@@ -12,16 +14,22 @@
             Console.WriteLine("Welcome to the game of Blackjack!");
             Console.WriteLine();
 
-            var c4 = new Card("4", 'C', 4);
-            var h6 = new Card("6", 'H', 6);
-            var s8 = new Card("8", 'S', 8);
-            var d2 = new Card("2", 'D', 10);
+            var cards = new List<Card>
+                                       {
 
+            new Card("4", Suite.Club, 4, false),
+            new Card("6", Suite.Heart, 6, false),
+            new Card("8", Suite.Spade, 8, false),
+            new Card("2", Suite.Diamond, 10, true),
+            new Card("4", Suite.Spade, 4, false),
+            new Card("T", Suite.Heart, 10, true)
             //4C =card.Description
+        };
+            var deck = new Deck(cards);
 
 
-            Console.WriteLine($"You have been dealt:{c4.Description}, {h6.Description}  ");
-            Console.WriteLine($"House have been dealt: {s8.Description}, {(d2.Hidden ? "?" : d2.Description)} ");
+            Console.WriteLine($"You have been dealt:{GetCardDescription(deck.Next())}, {GetCardDescription(deck.Next())}");
+            Console.WriteLine($"House have been dealt: {GetCardDescription(deck.Next())}, { GetCardDescription(deck.Next())}");
             Console.WriteLine();
 
             Console.WriteLine("What do you want to do ?");
@@ -31,13 +39,8 @@
             Console.WriteLine("I choose: 1");
             Console.WriteLine();
 
-            var s4 = new Card("4", 'S', 4);
-            s4.Hidden = false;
-
-            var h1 = new Card("1", 'H', 10);
-
-            Console.WriteLine("You have been dealt: 4S");
-            Console.WriteLine("House have been dealt:[?] ");
+            Console.WriteLine($"You have been dealt: {GetCardDescription(deck.Next())}");
+            Console.WriteLine($"House have been dealt:{GetCardDescription(deck.Next())}");
             Console.WriteLine();
 
             Console.WriteLine("What do you want to do ?");
@@ -51,8 +54,11 @@
 
             Console.WriteLine("Press any key");
             Console.ReadKey();
-      
-        
-}
+        }
+
+            public static string GetCardDescription(Card card)
+            {
+                return card.Hidden ? "[?]" : card.Description;
+            }
     }
 }
