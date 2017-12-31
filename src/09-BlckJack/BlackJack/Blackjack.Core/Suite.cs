@@ -6,28 +6,12 @@ using System.Threading.Tasks;
 
 namespace Blackjack.Core
 {
-    public enum Suite
+    public enum  Suite
     {
-        Club,
-        Spade,
-        Heart,
-        Diamond
+        Club = 1,
+        Spade = 2,
+        Heart = 3,
+        Diamond = 4
 
-    }
-    public enum Rank
-    {
-        Ace,
-        Two,
-        Three,
-        Four,
-        Five,
-        Six,
-        Seven,
-        Eight,
-        Nine,
-        Ten,
-        Jack,
-        Queen,
-        King,
     }
 }
