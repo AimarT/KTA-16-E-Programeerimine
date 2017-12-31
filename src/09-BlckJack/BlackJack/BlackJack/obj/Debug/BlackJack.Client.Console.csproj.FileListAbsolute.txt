@@ -1,9 +1,0 @@
-C:\Users\admin\Documents\Documents\TPT  II Aasta\Programeerimine\09-BlckJack\BlackJack\BlackJack\obj\Debug\BlackJack.Client.Console.csprojResolveAssemblyReference.cache
-C:\Users\admin\Documents\Documents\TPT  II Aasta\Programeerimine\09-BlckJack\BlackJack\BlackJack\obj\Debug\BlackJack.Client.Console.csproj.CoreCompileInputs.cache
-C:\Users\admin\Documents\Documents\TPT  II Aasta\Programeerimine\09-BlckJack\BlackJack\BlackJack\bin\Debug\BlackJack.exe.config
-C:\Users\admin\Documents\Documents\TPT  II Aasta\Programeerimine\09-BlckJack\BlackJack\BlackJack\bin\Debug\BlackJack.exe
-C:\Users\admin\Documents\Documents\TPT  II Aasta\Programeerimine\09-BlckJack\BlackJack\BlackJack\bin\Debug\BlackJack.pdb
-C:\Users\admin\Documents\Documents\TPT  II Aasta\Programeerimine\09-BlckJack\BlackJack\BlackJack\bin\Debug\Blackjack.Core.dll
-C:\Users\admin\Documents\Documents\TPT  II Aasta\Programeerimine\09-BlckJack\BlackJack\BlackJack\bin\Debug\Blackjack.Core.pdb
-C:\Users\admin\Documents\Documents\TPT  II Aasta\Programeerimine\09-BlckJack\BlackJack\BlackJack\obj\Debug\BlackJack.exe
-C:\Users\admin\Documents\Documents\TPT  II Aasta\Programeerimine\09-BlckJack\BlackJack\BlackJack\obj\Debug\BlackJack.pdb

@@ -4,33 +4,65 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Blackjack.Core
+namespace BlackJack.Core
 {
     public class Deck
     {
-        private readonly List<Card> _cards;
+        private static List<Card> cards;
 
-        public Deck(List<Card> cards)
+        public Deck ()
         {
-            _cards = cards;
+            this.Initialize();
         }
-        public static Deck C36()
-        {
-            throw new NotImplementedException();
-     }   
-        public static Deck C52()
-        {
-            throw new NotImplementedException();
-        }
-        public Card Next()
-        {
-            // TODO: This will blow up if no cards left in the deck!
-            var card = _cards.ElementAt(0);
 
-            _cards.RemoveAt(0);
+        public void Initialize()
+        {
+            cards = new List<Card>();
 
-            return card;
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 13; j++)
+                {
+                    cards.Add(new Card() { Suit = (Suit)i, Face = (Face)j });
+
+                    if (j <= 8)
+                        cards[cards.Count - 1].Value = j + 1;
+                    else
+                        cards[cards.Count - 1].Value = 10;
+                }
+            }
         }
-}
+
+        public void Shuffle()
+        {
+            Random rng = new Random();
+            int n = cards.Count;
+            while (n > 1)
+            {
+                n--;
+                int k = rng.Next(n + 1);
+                Card card = cards[k];
+                cards[k] = cards[n];
+                cards[n] = card;
+            }
+        }
+
+        public Card DrawACard()
+        {
+            if (cards.Count <= 0)
+            {
+                this.Initialize();
+                this.Shuffle();
+            }
+
+            Card cardToReturn = cards[cards.Count - 1];
+            cards.RemoveAt(cards.Count - 1);
+            return cardToReturn;
+        }
+
+        public int GetAmountOfRemainingCrads()
+        {
+            return cards.Count;
+        }                
     }
-
+}
