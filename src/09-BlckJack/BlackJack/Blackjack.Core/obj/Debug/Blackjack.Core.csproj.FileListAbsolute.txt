@@ -1,7 +1,0 @@
-C:\Users\Home\source\repos\BlackJack\BlackJack.Core\obj\Debug\BlackJack.Core.csprojResolveAssemblyReference.cache
-C:\Users\Home\source\repos\BlackJack\BlackJack.Core\obj\Debug\BlackJack.Core.csproj.CoreCompileInputs.cache
-C:\Users\Home\source\repos\BlackJack\BlackJack.Core\bin\Debug\BlackJack.Core.pdb
-C:\Users\Home\source\repos\BlackJack\BlackJack.Core\obj\Debug\BlackJack.Core.pdb
-C:\Users\Home\source\repos\BlackJack\BlackJack.Core\bin\Debug\BlackJack.Core.dll.config
-C:\Users\Home\source\repos\BlackJack\BlackJack.Core\bin\Debug\BlackJack.Core.dll
-C:\Users\Home\source\repos\BlackJack\BlackJack.Core\obj\Debug\BlackJack.Core.dll
